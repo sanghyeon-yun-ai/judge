@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SH</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="css/reaction_type.css"
+      media="(max-width:1200px)"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="flex">
+          <li><a href="#">home</a></li>
+          <li><a href="#profile">profile</a></li>
+          <li><a href="#work">works</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro flex">
+        <p class="attract">
+          성실함과 준비성이 조화된 <br />신인 디자이너&웹퍼블리셔 윤상현입니다.
+        </p>
+        <img src="image/baseball-charater.1.png" alt="" class="swirl-in-bck" />
+      </section>
+      <section class="flex profile" id="profile">
+        <h2 class="blind">프로필</h2>
+        <div class="profile_left">
+          <img src="illust_img.png" alt="" class="ip_picture" />
+          <h3 class="profile_title">profile</h3>
+          <ul>
+            <li><span>이름(name)</span>윤상현(S.H.YUN)</li>
+            <li><span>E-mail</span>kitten357@naver.com</li>
+            <li><span>MBTI</span>ENTJ</li>
+          </ul>
+        </div>
+        <div class="profile_right flex">
+          <section class="career">
+            <h3 class="career_title">자격증(License)</h3>
+            <ul>
+              <li><span>2018년 02월 </span> 1급응급구조사</li>
+              <li><span>2018년 08월 </span> 운전면허(1종보통)</li>
+              <li><span>2021년 06월 </span> 한국사(1급)</li>
+              <li><span>2024년 07월 </span> KTAS(한국형 응급환자 분류도구)</li>
+              <li><span>2025년 05월 </span> GTQ/GTQi(1급)</li>
+            </ul>
+          </section>
+          <section class="hobby">
+            <h3>hobby</h3>
+            <ul>
+              <li class="wbg"># Watching Baseball game</li>
+              <li class="pbg"># Playing board game</li>
+              <li class="tv"># Traveling</li>
+              <li class="mpm"># Make Plastic Model</li>
+              <li class="wy"># Watching Youtube</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <section class="skill flex">
+        <h2>SKILL</h2>
+        <ul class="skill_list inner flex">
+          <li>
+            <img src="image/logo/HTML.png" alt="" />
+            <p>HTML</p>
+          </li>
+          <li>
+            <img src="image/logo/CSS.png" alt="" />
+            <p>CSS</p>
+          </li>
+          <li>
+            <img src="image/logo/javascript.png" alt="" />
+            <p>javascript</p>
+          </li>
+          <li>
+            <img src="image/logo/jquery.png" alt="" />
+            <p>jquery</p>
+          </li>
+          <li>
+            <img src="image/logo/figma.png" alt="" />
+            <p>Figma</p>
+          </li>
+          <li>
+            <img src="image/logo/ps.png" alt="" />
+            <p>Photoshop</p>
+          </li>
+          <li>
+            <img src="image/logo/illuste.png" alt="" />
+            <p>Illustrator</p>
+          </li>
+          <li>
+            <img src="image/logo/primire pro.png" alt="" />
+            <p>Premiere Pro</p>
+          </li>
+          <li>
+            <img src="image/logo/after effect.png" alt="" />
+            <p>After Effects</p>
+          </li>
+        </ul>
+      </section>
+      <section class="work flex" id="work">
+        <h2>작업 결과물</h2>
+        <!-- 전체 슬라이더 컨테이너 -->
+        <div class="carousel">
+          <!-- 왼쪽 화살표 버튼 -->
+          <button class="prev">◀</button>
+
+          <!-- 슬라이드 이미지들을 담는 트랙 -->
+          <div class="track">
+            <!-- 마지막 이미지 복제 (무한 루프용) -->
+            <a href=""><img src="image/mokup-2.jpg" /></a>
+            <!-- 실제 이미지 3장 -->
+            <a href=""><img src="image/Macbook-Mockup(1).jpg" /></a>
+            <a href=""><img src="image/mokup.jpg" /></a>
+            <a href=""><img src="image/mokup-2.jpg" /></a>
+            <!-- 첫 번째 이미지 복제 (무한 루프용) -->
+            <a href=""><img src="image/Macbook-Mockup(1).jpg" /></a>
+          </div>
+
+          <!-- 오른쪽 화살표 버튼 -->
+          <button class="next">▶</button>
+          <!-- ADDED: 밑에 인디케이터(점) 영역 추가 -->
+          <div class="indicators"></div>
+        </div>
+      </section>
+      <script src="css/script.js"></script>
+    </main>
+    <footer>
+      <p>
+        이 페이지는 상업적 용도가 아닌 개인 포트폴리오 목적으로 제작되었습니다.
+      </p>
+      <address><small> © 2025 S.H.YUN All Rights Reserved.</small></address>
+    </footer>
+  </body>
+</html>

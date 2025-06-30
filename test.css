@@ -1,0 +1,87 @@
+@charset ("utf-8");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 1280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  padding: 10px;
+}
+.slide img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* 반응형 */
+@media (min-width: 768px) {
+  .slide {
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .slide {
+    flex: 0 0 33.3333%;
+  }
+}
+
+/* 버튼 스타일 */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.carousel-btn.prev {
+  left: 10px;
+}
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* 인디케이터 */
+.carousel-indicators {
+  text-align: center;
+  margin-top: 15px;
+}
+.carousel-indicators .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.carousel-indicators .dot.active {
+  background: #333;
+}
